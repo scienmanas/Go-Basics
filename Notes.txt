@@ -1,0 +1,28 @@
+1. Go is a compiled language, Go program use much less memory
+2. Compiler compiles it to binaries.
+3. Go is strongly typed and statically types.
+4. A small runtime is also compiled with Go for garbage collection and automated memoey management
+5. Built in concurrency.
+
+Data Types:
+
+bool
+string
+int int8 int16 int32 int64
+uint uint8  uint16  uint32  uint64 uintptr
+
+byte // alias for uint8
+
+rune // alias for int32
+    // represents a Unicode code point
+
+float32 float64
+
+complex64 complex128
+
+6. A goroutine is a lightweight thread managed by the Go runtime.
+
+7. go mod has all the modules with version, even that which we will install from outside.
+
+go build <file name>
+go run >binary name>
