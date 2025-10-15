@@ -1,7 +1,7 @@
 1. Go is a compiled language, Go program use much less memory
 2. Compiler compiles it to binaries.
 3. Go is strongly typed and statically types.
-4. A small runtime is also compiled with Go for garbage collection and automated memoey management
+4. A small runtime is also compiled with Go for garbage collection and automated memory management
 5. Built in concurrency.
 
 Data Types:
@@ -33,3 +33,16 @@ go run <binary name>
 - Default value for all signed, unsigned ints, floats and runes is zero
 - string: '', and for boolean it's false
 
+8. Slices are just wrapper around array with more functionality to give it more power
+
+9. If we append any element and array/slice doesn't have any space than a completely new array is allocated
+
+10. Map always returns something, even if the key is not present.
+
+11. Like C, Go's formal grammar uses semicolons to terminate statements, but unlike in C, those semicolons do not appear in the source. Instead the lexer uses a simple rule to insert semicolons automatically as it scans, so the input text is mostly free of them.
+
+12. Strings are immutable in go.
+
+13. Parallel execution and concurrency is different, parallel execution allocated cpu intances whereas concurrency is like async it comes back when the task is finished.
+
+14. Goroutines are lightweight, independent executing functions in the GO which are managed by the Go runtime, that alllow for concurrent execution of tasks

@@ -27,7 +27,7 @@ func main() {
 	fmt.Println(myString)
 
 	fmt.Println(len("test")) // 4 -> its number of bytes not number of characters in the string
-	fmt.Println(utf8.RuneCountInString("y"))
+	fmt.Println(utf8.RuneCountInString("y")) // for crorrect count
 
 	var myRune rune = 'a'
 	fmt.Println(myRune)
