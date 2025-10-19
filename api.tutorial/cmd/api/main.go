@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
-	log "github.com/sirupen/logrus"
+	log "github.com/sirupsen/logrus"
 )
 
 func main() {
