@@ -21,7 +21,7 @@ func main () {
 		// go keywork is used to run the function concurrently - think of it like async
 		go dbCall(i) // Without wait group the program will exit immediately
 	}
-	waitGroup.Wait()
+	waitGroup.Wait() // It will wait for all the goroutines to finish
 	fmt.Printf("\nTotal execution time: %v", time.Since(t0))
 	fmt.Printf("\nThe results are: %v", results)
 }
@@ -30,10 +30,9 @@ func dbCall (i int) {
 	// var delay float32 = rand.Float32()*2000
 	var delay float32 = 2000 // Removing randomness to depict what happen when multiple modification happens
 	time.Sleep(time.Duration(delay)*time.Millisecond)
-	fmt.Println("The result from the database is: ", dbData[i])
 	save(dbData[i])
 	log()
-	waitGroup.Done()
+	waitGroup.Done() // It will decrement the wait group counter by 1
 }
 
 func save (result string){
